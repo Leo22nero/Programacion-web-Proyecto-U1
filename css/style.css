@@ -140,21 +140,18 @@ html {
 }
 
 .parrafo-photoshot p {
-    text-align: center;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.5;
 }
-
-
 
 .bodas-imagen img {
     display: block;
     width: 100%;
     height: 520px;
     object-fit: cover;
-    border-radius: 3rem;
 }
 
 
