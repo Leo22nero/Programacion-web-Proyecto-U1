@@ -70,7 +70,7 @@ html {
     background-color: var(--oscuro);
     height: 33rem;
     background: linear-gradient(135deg, #0d0f0d 0%, #1e2b1e 45%, #1e3a3a 75%, #000000 100%);
-    min-height: 38rem;
+    min-height: 40rem;
     display: flex;
 
 }
@@ -111,5 +111,52 @@ html {
     position: relative;
     margin: 0;
 }
+
+.sombra {
+    -webkit-box-shadow: 19px 19px 11px -7px rgba(32,36,42,0.77);
+    -moz-box-shadow: 19px 19px 11px -7px rgba(32,36,42,0.77);
+    box-shadow: 19px 19px 11px -7px rgba(32,36,42,0.77);
+    background-color: var(--blanco);
+    padding: 2rem;
+}
+
+@media(min-width:768px){
+    .bodas-seccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+
+
+.titulo-abajo h1 {
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    font-size: 7rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.parrafo-photoshot p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+
+.bodas-imagen img {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+
 
 
