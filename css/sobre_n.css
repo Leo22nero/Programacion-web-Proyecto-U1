@@ -50,7 +50,22 @@ html {
     text-decoration: underline;
 
 }
+@media (max-width: 767px) {
+    .nav-principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 
+    .nav-principal a:has(.nav-logo) {
+        order: -1;
+    }
+
+    .nav-principal a {
+        padding: 0.75rem;
+        text-align: center;
+    }
+}
 .contenedor_Sobre_N{
     font-family: "Montserrat", sans-serif;
 }
