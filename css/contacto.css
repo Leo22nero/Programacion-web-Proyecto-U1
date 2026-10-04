@@ -1,24 +1,39 @@
 h2{
-    font-size: 20rem;
+    font-size: 7rem;
     text-align: center;
 }
 
 
+.nav-principal {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: var(--oscuro);
+    
+}
 
 .contactanos-arriba{
-    position: absolute;
-    max-width: 120rem;
-    margin: 30rem;
+    margin: 3rem;
 }
 
+.nav-principal {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: var(--oscuro);
+    
+}
 
 .contenedor{
-    position: absolute;
     max-width: 120rem;
-    margin: 30rem;
+    margin: 0 auto;
 }
-
-
 
 .sombra {
     -webkit-box-shadow: 19px 19px 11px -7px rgba(32,36,42,0.77);
