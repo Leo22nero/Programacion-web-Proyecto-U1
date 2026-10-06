@@ -8,6 +8,23 @@
 }
 
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
 
 html {
     background-color: var(--beige);
@@ -89,7 +106,7 @@ html {
     background-color: var(--oscuro);
     height: 33rem;
     background: linear-gradient(135deg, #0d0f0d 0%, #1e2b1e 45%, #1e3a3a 75%, #000000 100%);
-    min-height: 40rem;
+    min-height: 45rem;
     display: flex;
 
 }
@@ -101,7 +118,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .centro-division img{
@@ -144,7 +161,7 @@ html {
     .bodas-seccion {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
+        column-gap: 3rem;
         place-items: center;
     }
 }
@@ -156,6 +173,7 @@ html {
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+    margin-left: 3rem;
 }
 
 .parrafo-photoshot p {
@@ -164,6 +182,7 @@ html {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.5;
+    margin-left: 3rem;
 }
 
 .bodas-imagen{
