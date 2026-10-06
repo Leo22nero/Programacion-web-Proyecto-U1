@@ -49,7 +49,6 @@ html {
 
 }
 
-/**Pendiente de mover al css correspondinete sobre.css**/
 
 
 .contenedor{
@@ -123,11 +122,12 @@ html {
 }
 
 .imagen-principal{
-    background-image: url("../img/principal/principal-foto.jpeg");
+    background-image: url("../img/principal/principal-foto.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 65rem;
+    width: 100%;
+    height: 65rem;   
     position: relative;
     margin: 0;
 }
@@ -177,6 +177,20 @@ html {
     width: 38rem;
     height: auto;
     object-fit: cover;
+}
+
+.footer-index{
+  background-color: var(--oscuro);
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-index p{
+    color: var(--beige);
+    font-size: 1rem;
+    text-align: center;
 }
 
 
