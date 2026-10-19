@@ -1,0 +1,275 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfaf7;
+    color: #292725;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    text-align: center;
+    padding: 45px 20px 35px;
+}
+
+.icono-camara {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    color: #b49370;
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.linea {
+    width: 50px;
+    height: 2px;
+    background-color: #b49370;
+    margin: 22px auto;
+}
+
+.descripcion {
+    color: #77716c;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* CONTENEDOR DE PAQUETES */
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.paquetes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e7dfd5;
+    border-radius: 13px;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.09);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 25px 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contenido h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.tipo {
+    text-align: center;
+    color: #b49370;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+.separador {
+    width: 35px;
+    height: 1px;
+    background-color: #e2d6c9;
+    margin: 20px auto 12px;
+}
+
+/* PRECIOS */
+.precio {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 38px;
+}
+
+.moneda {
+    text-align: center;
+    color: #99918b;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/* CARACTERÍSTICAS */
+ul {
+    list-style: none;
+    margin: 25px 0;
+    flex: 1;
+}
+
+li {
+    color: #615c57;
+    font-size: 13px;
+    margin-bottom: 17px;
+    line-height: 1.4;
+}
+
+li::first-letter {
+    color: #b49370;
+}
+
+/* BOTONES */
+.boton {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ad8965;
+    border: 1px solid #b49370;
+    border-radius: 7px;
+    padding: 13px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #b49370;
+    color: white;
+}
+
+.boton-principal {
+    background-color: #b49370;
+    color: white;
+}
+
+.boton-principal:hover {
+    background-color: #967453;
+}
+
+/* PAQUETE DESTACADO */
+.popular {
+    border-color: #d8c5ae;
+}
+
+.etiqueta {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b49370;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 17px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* CONTACTO PERSONALIZADO */
+.contacto {
+    margin: 28px 0;
+    padding: 25px 30px;
+    background-color: #f5f0eb;
+    border: 1px solid #ebe2d8;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacto h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.contacto p {
+    font-size: 14px;
+    color: #77716c;
+    line-height: 1.6;
+}
+
+.contacto .boton {
+    min-width: 200px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #8b837b;
+    font-size: 12px;
+}
+
+/* ADAPTACIÓN A CELULARES Y TABLETAS */
+@media (max-width: 900px) {
+    .paquetes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tarjeta:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .encabezado {
+        padding-top: 35px;
+    }
+
+    .paquetes {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta:last-child {
+        grid-column: auto;
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .contacto .boton {
+        min-width: 0;
+    }
+}
