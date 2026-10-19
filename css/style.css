@@ -3,7 +3,7 @@
     --oscuro: #212121;
     --verde-olivo: #1E2B1E;
     --gris-carbon: #2B2B2B;
-    --beige: #FFFAF0;
+    --beige: #E8E8E0;
     --verde-letras: #194b19;
 }
 
@@ -27,7 +27,7 @@ html, body {
 
 
 html {
-    background-color: var(--blanco);
+    background-color: var(--beige);
     font-size: 62.5%;
     box-sizing: border-box;
 }
