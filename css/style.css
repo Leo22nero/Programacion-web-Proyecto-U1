@@ -97,8 +97,6 @@ html {
 }
 
 
-
-
 .centro{
     padding: 4rem 3rem;
     margin-bottom: 5rem;
@@ -131,6 +129,7 @@ html {
     transition: transform 1s cubic-bezier(0.2, 0.6, 0.3, 1);
 }
 
+
 .centro-division:hover img{
     transform: scale(1.07);
 
@@ -143,6 +142,12 @@ html {
     font-size: 1.6rem;
     line-height: 1.5;
     max-width: 25rem;
+}
+
+.centro-division a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .imagen-principal{
@@ -230,11 +235,17 @@ html {
 
 
 .footer-index{
+  
   background-color: var(--oscuro);
   padding: 2rem;
   margin-top: 3rem;
   font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
+  
+}
+.footer-div{
+  align-items: center;
+  text-align: center; 
 }
 
 .footer-index p{
@@ -245,4 +256,7 @@ html {
 
 
 
-
+.imagen-oliver{
+    width: 17rem;
+    margin-bottom: 1.5rem;
+}
