@@ -39,24 +39,24 @@
 <main class="contenedor sombra">
     <section>
         <h2>Contactanos</h2>
-        <form class="formulario">
+        <form class="formulario" id="formulario-contacto">
             <fieldset>
                 <div class="contenedor-info">
                         <div class="info">
-                            <label>NOMBRE(S):</label>
-                            <input class="input-text" type="text" >
+                            <label>nombre:</label>
+                            <input class="input-text" type="text" id=nombre>
                         </div>
                         <div class="info">
-                            <label>NUMERO DE TELEFONO:</label>
-                            <input class="input-text" type="tel">
+                            <label>telefono:</label>
+                            <input class="input-text" type="tel" id="telefono">
                         </div>
                         <div class="info">
-                            <label>CORREO ELECTRONICO:</label>
-                            <input class="input-text" type="email">
+                            <label>email:</label>
+                            <input class="input-text" type="email" id="email">
                         </div>
                         <div class="info">
-                            <label>MENSAJE:</label>
-                            <textarea class="input-text"></textarea>
+                            <label>mensaje:</label>
+                            <textarea class="input-text" id="mensaje"></textarea>
                         </div>
                     </div> 
                     <div class="alinear-derecha flex">
@@ -66,5 +66,8 @@
         </form>
     </section>
     </main>
+
+     <script src="JS contacto.js"></script>
+
 </body>
 </html>
