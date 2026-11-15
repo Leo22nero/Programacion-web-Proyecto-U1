@@ -59,7 +59,7 @@
     <!--Seccion de boda parte baja-->
 
     <section class="bodas-seccion">
-        <div>
+        <div class="bodas-contenido">
             <section class="titulo-abajo">
                     <h1>
                         <span>Wedding</span><br>
@@ -73,7 +73,7 @@
         </div>
 
         <section class="ver-mas-boda">
-             <a href="Portafolio-bodas.html" class="ver-mas-boda-boton">VER</a>  
+             <a href="Portafolios.html" class="ver-mas-boda-boton">VER</a>  
         </section>
             
         </div>
@@ -81,7 +81,16 @@
         <!--Termina el texto de boda y comienza la imagen-->
 
         <div class="bodas-imagen">
-            <img src="/img/principal/immersive lens boda.png" alt="foto-bodas">
+            <picture>
+                <!--Resposividad de la parte de bodas-->
+
+                <source
+                    media="(max-width: 768px)" 
+                    srcset="/img/principal/bodas-respo.jpg">
+            
+                <img src="/img/principal/immersive lens boda.png" alt="foto-bodas">
+            
+        </picture>
         </div>
     </section>
 
