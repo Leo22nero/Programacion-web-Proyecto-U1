@@ -17,15 +17,30 @@ body {
     padding: 45px 20px 35px;
 }
 
-.icono-camara {
-    font-size: 40px;
-    margin-bottom: 15px;
+.iconos-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.iconos-main img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.subtitulo {
+    margin: 0;
+    text-align: center;
 }
 
 .subtitulo {
     color: #b49370;
     letter-spacing: 5px;
-    font-size: 13px;
+    font-size: 17px;
     margin-bottom: 15px;
 }
 
