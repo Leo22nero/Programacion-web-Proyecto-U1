@@ -290,7 +290,7 @@ html {
 
 /*Bodas seccion resposividad*/
 
-@media(max-width: 768px){
+@media(max-width: 750px){
 
     .bodas-seccion {
         grid-template-columns: 1fr;
