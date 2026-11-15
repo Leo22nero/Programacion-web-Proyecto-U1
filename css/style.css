@@ -72,7 +72,8 @@ html {
     max-width: 120rem;
     margin: 0 auto;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
     .nav-principal {
         display: grid;
         grid-template-columns: 1fr;
@@ -88,12 +89,14 @@ html {
         text-align: center;
     }
 }
+
 @media(min-width:768px){
     .centro {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
     }
+    
 }
 
 
@@ -259,4 +262,28 @@ html {
 .imagen-oliver{
     width: 17rem;
     margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .centro {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        height: auto;
+        min-height: auto;
+        padding: 3rem 1.5rem;
+    }
+
+    .centro-division {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .centro-division img {
+        width: 55%;
+        max-width: 20rem;
+    }
+
 }
