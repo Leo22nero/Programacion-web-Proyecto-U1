@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolios</title>
+    <title>Portafolios | Immersive Lens</title>
 
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,36 +15,67 @@
     <link rel="preload" href="css/portafolios.css" as="style">
     <link rel="stylesheet" href="css/portafolios.css">
 
-    <script src="js/portafolio.js" defer></script>
-    
-
+<script src="js/shoot.js" defer></script>
+<script src="js/portafolio.js" defer></script>
 </head>
+<div class="shoot" id="shoot" aria-hidden="true">
+    <button class="volver" id="volver">← Volver</button>
 
+    <div class="shoot-scroll" id="shoot-scroll">
+        <section class="hero">
+            <img id="s-img" alt="">
+            <div class="hero-info">
+                <h1 id="s-title"></h1>
+                <span id="s-sub"></span>
+            </div>
+        </section>
 
+        <section class="detalle">
+            <p class="descripcion" id="s-desc"></p>
+            <dl class="datos">
+                <div><dt>Cliente</dt><dd id="s-cliente"></dd></div>
+                <div><dt>Año</dt><dd id="s-anio"></dd></div>
+                <div><dt>Servicio</dt><dd id="s-servicio"></dd></div>
+            </dl>
+            <div class="galeria" id="s-galeria"></div>
+        </section>
+    </div>
+</div>
 <body>
     <header class="header">
-            <nav class="nav-principal contenedor">
+        <nav class="nav-principal contenedor">
             <a href="Sobre_N.html">Sobre Nosotros</a>
             <a href="index.html">
-                <img src="/img/principal/Immersive Lens logo blanco.png" alt="Immersive Lens" class="nav-logo">
+                <img src="img/principal/Immersive Lens logo blanco.png" alt="Immersive Lens" class="nav-logo">
             </a>
-            <a href="Contactanos.html" class="">Contactanos</a>
+            <a href="Contactanos.html">Contáctanos</a>
             <a href="Cotizacion.html">Cotizaciones</a>
-            </nav>
+        </nav>
+    </header>
 
+    <main>
+        <div class="carousel">
+            <div class="track">
+                <figure class="card" data-id="terre-rouge" data-title="Terre Rouge" data-desc="Serie sobre texturas y color.">
+                    <img src="img/portafolios/portafolio-imagen1.png" alt="Terre Rouge">
+                </figure>
 
-    <div class="slider">
-        <img src="/img/portafolios/portafolio-imagen1.png" class="activa" alt="Fotografía 1">
-        <img src="/img/portafolios/portafolio-imagen2.jpeg" alt="Fotografía 2">
-        <img src="/img/portafolios/portafolio-imagen3.jpeg" alt="Fotografía 3">
-        <img src="/img/portafolios/portafolio-imagen4.PNG" alt="Fotografía 3">
-    </div>
+                <figure class="card" data-id="segundo-proyecto" data-title="Segundo proyecto" data-desc="Descripción del segundo proyecto.">
+                    <img src="img/portafolios/portafolio-imagen2.jpeg" alt="Segundo proyecto">
+                </figure>
+
+                <figure class="card" data-id="tercer-proyecto" data-title="Tercer proyecto" data-desc="Descripción del tercer proyecto.">
+                    <img src="img/portafolios/portafolio-imagen3.jpeg" alt="Tercer proyecto">
+                </figure>
+            </div>
+        </div>
+
+        <div class="glass">
+            <h2 id="g-title"></h2>
+            <p id="g-desc"></p>
+        </div>
+    </main>
 
     <div class="filtro"></div>
-   
-</header>
- 
 </body>
-
-
 </html>
