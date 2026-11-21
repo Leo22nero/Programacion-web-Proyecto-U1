@@ -12,10 +12,7 @@ console.log(enlaces);
 enlaces[0].textContent = 'Sobre Nosotros';
 enlaces[0].href = 'Sobre_N.html';
 
-const heading2 = document.querySelector('h2');
-console.log(heading2);
 
-// generar nuevo enlace
 const nuevoEnlace = document.createElement('A');
 nuevoEnlace.href = "Cotizacion.html";
 nuevoEnlace.textContent = "Cotizaciones";
@@ -40,10 +37,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 console.log(5);
-
-window.onscroll = function(){
-    console.log('scrolling...');
-};
 
 
 const nombre = document.querySelector('#nombre');
