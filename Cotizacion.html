@@ -43,9 +43,11 @@
                         <li>✓ 1 cambio de vestuario</li>
                     </ul>
 
-                    <a href="#contacto" class="boton">
-                        Solicitar cotización
-                    </a>
+                   <button class="boton btn-cotizar"
+                        data-paquete="Básico"
+                        data-precio="150">
+                    Solicitar cotización
+                </button>
                 </div>
             </article>
 
@@ -73,9 +75,11 @@
                         <li>✓ Asesoría de ubicación</li>
                     </ul>
 
-                    <a href="#contacto" class="boton boton-principal">
-                        Solicitar cotización
-                    </a>
+                    <button class="boton boton-principal btn-cotizar"
+                        data-paquete="Estándar"
+                        data-precio="250">
+                    Solicitar cotización
+                </button>
                 </div>
             </article>
 
@@ -102,17 +106,119 @@
                         <li>✓ Asesoría de ubicación</li>
                     </ul>
 
-                    <a href="#contacto" class="boton">
-                        Solicitar cotización
-                    </a>
+                   <button class="boton btn-cotizar"
+                        data-paquete="Premium"
+                        data-precio="450">
+                    Solicitar cotización
+                </button>
                 </div>
             </article>
 
         </section>
 
-        <section class="contacto" id="contacto">
-            
-        </section>
+        
+<section class="formulario-cotizacion" id="contacto">
+
+    <div class="titulo-formulario">
+        <p class="subtitulo">COTIZA TU SESIÓN</p>
+        <h2>Solicita tu cotización</h2>
+        <p>
+            Completa los siguientes datos para preparar
+            una cotización personalizada.
+        </p>
+    </div>
+
+    <form id="formCotizacion">
+
+        <div class="grupo-campos">
+
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre"
+                       placeholder="Escribe tu nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo"
+                       placeholder="ejemplo@gmail.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="tipoFoto">Tipo de fotografía</label>
+                <select id="tipoFoto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Sesión personal">Sesión personal</option>
+                    <option value="Fotografía familiar">Fotografía familiar</option>
+                    <option value="Fotografía de pareja">Fotografía de pareja</option>
+                    <option value="Eventos">Eventos</option>
+                    <option value="Fotografía de producto">Fotografía de producto</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha de la sesión</label>
+                <input type="date" id="fecha" required>
+            </div>
+
+        </div>
+
+        <div class="campo">
+            <label for="paqueteSeleccionado">Paquete seleccionado</label>
+            <select id="paqueteSeleccionado" required>
+                <option value="">Selecciona un paquete</option>
+                <option value="Básico">Básico - $150</option>
+                <option value="Estándar">Estándar - $250</option>
+                <option value="Premium">Premium - $450</option>
+            </select>
+        </div>
+
+        <div class="campo adicional">
+            <label>Servicios adicionales</label>
+
+            <label class="opcion-extra">
+                <input type="checkbox" id="fotosExtra">
+                Fotografías adicionales (+$100)
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="comentarios">Detalles de tu sesión</label>
+            <textarea id="comentarios" rows="4"
+                placeholder="Cuéntanos qué tipo de sesión necesitas..."></textarea>
+        </div>
+
+        <div class="resumen">
+            <h3>Resumen de tu cotización</h3>
+
+            <p>Paquete:
+                <span id="resumenPaquete">No seleccionado</span>
+            </p>
+
+            <p>Precio del paquete:
+                <span id="precioPaquete">$0 MXN</span>
+            </p>
+
+            <p>Servicios adicionales:
+                <span id="precioExtra">$0 MXN</span>
+            </p>
+
+            <div class="total">
+                Total estimado:
+                <span id="total">$0 MXN</span>
+            </div>
+        </div>
+
+        <button type="submit" class="boton boton-principal">
+            Enviar solicitud de cotización
+        </button>
+
+        <p id="mensaje"></p>
+
+    </form>
+
+</section>
+
 
     </main>
 
